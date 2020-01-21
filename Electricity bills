@@ -1,0 +1,12 @@
+Console.WriteLine("Enter Electricity Value");
+            int value = int.Parse(Console.ReadLine());
+            if(value>100)
+            {
+                double result1 = value * 6.95;
+                Console.WriteLine("Bill = " + result1);
+            }
+            else
+            {
+                double result2 = value * 5.95;
+                Console.WriteLine("Bill = " + result2);
+            }

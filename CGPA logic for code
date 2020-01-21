@@ -1,0 +1,33 @@
+Console.WriteLine("Enter CA marks of C++  ");
+            double value1 = double.Parse(Console.ReadLine());
+                        Console.WriteLine("Enter midterm marks of C++  ");
+            double value11 = double.Parse(Console.ReadLine());
+                        Console.WriteLine("Enter Endterm marks of C++  ");
+            double value111 = double.Parse(Console.ReadLine());
+                        Console.WriteLine("Enter attendence of all subjects  ");
+            double value1111 = double.Parse(Console.ReadLine());
+            if (value1111>=75 && value1111<=79)
+            {
+                att = 2;
+            }
+            else if(value1111 >= 80 && value1111 <= 84)
+            {
+                 att = 3;
+            }
+            else if(value1111 >= 85 && value1111 <= 89)
+            {
+                 att = 4;
+            }
+            else if(value1111 >= 90 && value1111 <= 100)
+            {
+                 att = 5;
+            }
+            else
+            {
+                Console.WriteLine("Wrong Input");
+            }
+            double actca = (value1 / 60 )* 25;
+            double actmid = (value11/ 40) * 20;
+            double actend =( value111 / 70) * 50;
+            double actres = ((actca + actmid + actend + att)/10);
+            Console.WriteLine("CGPA = " + actres);

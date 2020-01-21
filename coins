@@ -1,0 +1,12 @@
+Console.WriteLine("Enter Rs.10 coin Value = ");
+            int value1 = int.Parse(Console.ReadLine());
+            Console.WriteLine("Enter Rs.5 coin Value = ");
+            int value2 = int.Parse(Console.ReadLine());
+            Console.WriteLine("Enter Rs.2 coin Value = ");
+            int value3 = int.Parse(Console.ReadLine());
+            Console.WriteLine("Enter Rs.1 coin Value = ");
+            int value4 = int.Parse(Console.ReadLine());
+
+            int result =(10*value1)+(5*value2)+(2*value3)+(1*value4);
+            Console.WriteLine("Result = " + result);
+            Console.ReadKey();
